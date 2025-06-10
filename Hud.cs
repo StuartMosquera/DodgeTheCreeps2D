@@ -2,51 +2,51 @@ using Godot;
 
 public partial class Hud : CanvasLayer
 {
-  [Signal]
-  public delegate void StartGameEventHandler();
+    [Signal]
+    public delegate void StartGameEventHandler();
 
-  public void ShowMessage(string text)
-  {
-    var message = GetNode<Label>("Message");
-    message.Text = text;
+    public void ShowMessage(string text)
+    {
+        var message = GetNode<Label>("Message");
+        message.Text = text;
 
-    message.Show();
+        message.Show();
 
-    GetNode<Timer>("MessageTimer").Start();
-  }
+        GetNode<Timer>("MessageTimer").Start();
+    }
 
-  public async void ShowGamerOver()
-  {
-    ShowMessage("Game Over");
+    public async void ShowGamerOver()
+    {
+        ShowMessage("Game Over");
 
-    var messageTimer = GetNode<Timer>("MessageTimer");
+        var messageTimer = GetNode<Timer>("MessageTimer");
 
-    await ToSignal(messageTimer, Timer.SignalName.Timeout);
+        await ToSignal(messageTimer, Timer.SignalName.Timeout);
 
-    var message = GetNode<Label>("Message");
-    message.Text = "Dodge the Creeps!";
+        var message = GetNode<Label>("Message");
+        message.Text = "Dodge the Creeps!";
 
-    message.Show();
+        message.Show();
 
-    await ToSignal(GetTree().CreateTimer(1.0), SceneTreeTimer.SignalName.Timeout);
+        await ToSignal(GetTree().CreateTimer(1.0), SceneTreeTimer.SignalName.Timeout);
 
-    GetNode<Button>("StartButton").Show();
-  }
+        GetNode<Button>("StartButton").Show();
+    }
 
-  public void UpdateScore(int score)
-  {
-    GetNode<Label>("ScoreLabel").Text = score.ToString();
-  }
+    public void UpdateScore(int score)
+    {
+        GetNode<Label>("ScoreLabel").Text = score.ToString();
+    }
 
-  private void OnStartButtonPressed()
-  {
-    GetNode<Button>("StartButton").Hide();
+    private void OnStartButtonPressed()
+    {
+        GetNode<Button>("StartButton").Hide();
 
-    EmitSignal(SignalName.StartGame);
-  }
+        EmitSignal(SignalName.StartGame);
+    }
 
-  private void OnMessageTimerTimeout()
-  {
-    GetNode<Label>("Message").Hide();
-  }
+    private void OnMessageTimerTimeout()
+    {
+        GetNode<Label>("Message").Hide();
+    }
 }
