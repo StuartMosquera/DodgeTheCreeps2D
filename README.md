@@ -20,11 +20,14 @@ In this simple game, you just have to *dodge* enemies for as long as possible.
 2. Import the proyect into Godot by selecting the `project.godot` file.
 3. Build and play, or export the project.
 
-**Note:** To export the project, you will need to have the **_export templates .NET_** installed. You can find them in the **All downloads** section of the official [Godot Engine](https://godotengine.org/) website.
+> **Note:** To export the project, you will need to have the **_export templates .NET_** installed. You can find them in the **All downloads** section of the official [Godot Engine](https://godotengine.org/) website.
 
 ## :scroll: How to play
-- **ENTER**: Start de game.
-- **Arrow Keys**: Move the character.
+- <kbd>Enter</kbd>: Start de game.
+- <kbd>Up Arrow</kbd>: Move up.
+- <kbd>Down Arrow</kbd>: Move down.
+- <kbd>Left Arrow</kbd>: Move left.
+- <kbd>Right Arrow</kbd>: Move Right.
 
 ## :bust_in_silhouette: Credits
 The assets are provided by **Godot Engine** as part of their tutorials.
