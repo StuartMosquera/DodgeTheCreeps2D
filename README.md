@@ -4,8 +4,8 @@ This is my first 2D game, which I created by following the step-by-step tutorial
 
 In this simple game, you just have to _dodge_ enemies for as long as possible.
 
-- **Engine**: Godot .NET
-- **Renderer**: Compatibility
+- **Engine:** Godot .NET
+- **Renderer:** Compatibility
 
 ## :video_game: Preview
 
