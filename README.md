@@ -43,6 +43,3 @@ The assets are provided by Godot Engine as part of their tutorials.
 
 All credits to the authors of the original assets are found in the official [godot-demo-projects](https://github.com/godotengine/godot-demo-projects/tree/master/mono/dodge_the_creeps) repository.
 
-## :key: License
-
-This project is open source and available under the [MIT License](./LICENSE).
