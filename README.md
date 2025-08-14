@@ -2,7 +2,7 @@
 
 This is my first 2D game, which I created by following the step-by-step tutorial from the [Godot Docs](https://docs.godotengine.org/en/stable/).
 
-In this simple game, you just have to _dodge_ enemies for as long as possible.
+In this simple game, the player must _dodge_ enemies for as long as possible.
 
 - **Engine:** Godot .NET
 - **Renderer:** Compatibility
@@ -25,7 +25,7 @@ In this simple game, you just have to _dodge_ enemies for as long as possible.
 2. Import the proyect into Godot by selecting the `project.godot` file.
 3. Build and play, or export the project.
 
-> **Note:** To export the project, you will need to have the **Export templates .NET** installed. You can find them in the All downloads section of the official [Godot Engine](https://godotengine.org/) website.
+> **Note:** To export the project, you will need to have the **Export templates .NET** installed. You can find them in the **All downloads** section of the official [Godot Engine](https://godotengine.org/) website.
 
 ## :scroll: How to play
 
